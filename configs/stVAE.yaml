@@ -1,0 +1,61 @@
+# configs/stVAE.yaml
+# -----------------------------------------------------------------------------
+# 数据设置
+# -----------------------------------------------------------------------------
+DATA:
+  RAT: ""         # 示例: 实验动物或对象标识
+  TEST_FOLD: 0             # 用于交叉验证等
+  DAY: ""        # 日期标识
+  TASK: ""     # 数据任务类型
+
+# -----------------------------------------------------------------------------
+# 数据预处理设置
+# -----------------------------------------------------------------------------
+PREPROCESS:
+  BIN_SIZE: 0.1
+  BEFORE_CUE_LONG: 2       # seconds, 训练时使用的时间段
+  BEFORE_CUE: 0            # cue前的时间点（不包含cue时刻）
+  AFTER_CUE: 0           # cue后的时间段
+  BEFORE_PRESS: 1          # press前的时间段
+  AFTER_PRESS: 0.5         # press后立即的时间段
+  AFTER_RELEASE: 1         # release后不包括该点的时间段
+  AFTER_RELEASE_LONG: 2    # release后的长时间段（训练时需要）
+
+# -----------------------------------------------------------------------------
+# 模型专属设置：stVAE模型参数
+# -----------------------------------------------------------------------------
+MODEL:
+  NAME: "stVAE"     # 模型名称，用于在日志或者保存文件中标识模型种类
+  VARIATIONAL: True        # 是否使用变分自编码器方式训练
+  HIDDEN_SIZE: 64         # 隐藏层大小
+  DROPOUT: 0            # dropout 概率
+  NUM_HEADS: 2            # 多头自注意力机制的头数
+  N_LAYERS_ENCODER: 1      # 编码器层数
+  N_LAYERS_DECODER: 1      # 解码器层数
+  DECODER_POS: True        # 解码器是否使用位置编码
+  EMBED_DIM: 24            # 嵌入维度
+  LATENT_DIM: 6            # 潜在向量的维度
+  TIME_WINDOW: 25          # 时间窗口长度
+
+# -----------------------------------------------------------------------------
+# 训练配置设置
+# -----------------------------------------------------------------------------
+TRAIN:
+  BATCH_SIZE: 128
+  BATCH_SIZE_TEST: 1000000  # 测试时可以设置较大的batch size
+  STEP_SIZE: 1
+  STEP_SIZE_TEST: 10
+  NUM_UPDATES: 40          # 更新步数上限
+  CLIP_GRAD_NORM: 0.5
+  LR:
+    INIT: 0.005
+    SCHEDULE: True
+    SCHEDULER: "cosine"
+    WARMUP: 10
+  WEIGHT_DECAY: 0.01
+  BETA: 0.1
+  CHECKPOINT_INTERVAL: 100000  # checkpoint间隔步数
+  LOGS_PER_EPOCH: 4
+  VAL_INTERVAL: 4
+  VAL_DRAW_INTERVAL: 1000000   # 可视化绘制间隔（如果需要）
+  SHOW_PLOTS: False            # 是否在训练时显示图表（服务器通常设置为False）
