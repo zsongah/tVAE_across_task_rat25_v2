@@ -20,11 +20,11 @@ def run_exp(config, dataset, proj_name_1mc):
                         dataset=dataset,
                         experiment_name = experiment,
                         )
-    runner.run()
+    runner.run() # 其他模型的runner类也要定义run然后可以训练参数并且保存checkpoint以及结果图。
     print('\n')
 
 def main():
-    
+
     # '''
     # 1MC 2020-08-31; 2020-07-16
     # 2MC 2020-09-23; 2020-10-05
@@ -36,7 +36,7 @@ def main():
     task_1mc = '1MC'
     day_1mc = '2020-07-16' # 数字之间加下划线不识别
 
-    proj_name_1mc = 'stVAE'
+    proj_name_1mc = 'stVAE' # 加载不同模型
 
     config_file = proj_name_1mc
     for test_fold in [0]:
@@ -53,9 +53,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-
-
-

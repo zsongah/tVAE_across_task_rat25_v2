@@ -64,7 +64,7 @@ class stVAE_runner:
             train_loss = self.train_1_epoch()  # 使用标准训练数据
             train_loss_all.extend(train_loss)
             self.scheduler.step() # 更新学习率调度器额状态
-          
+        
             if epoch > 30: # 只有variational 并且 epoch大于30 才逐渐变大
                 self.beta = self.config.TRAIN.BETA * ((epoch - 10) % 20)
 
@@ -87,29 +87,12 @@ class stVAE_runner:
         torch.save(save_dict, f'{model_result_dir}/{self.experiment}.pth') # save the model after training
         
         ########## plot 1.loss, 2.latent, 3.neural data reconstruction
-        # results = self.evaluate()
-        # self.plot_result(results, self.config.FIG_DIR, self.experiment, self.config.TRAIN.NUM_UPDATES,
-        #                  has_var=self.variational, need_show=self.config.TRAIN.SHOW_PLOTS)
-        # results["train_loss_all"] = train_loss_all # training loss
-        # results["val_loss_all"] = val_loss_all # val loss during training
+        results = self.evaluate()
+        results["train_loss_all"] = train_loss_all # training loss
+        results["val_loss_all"] = val_loss_all # val loss during training
+        self.plot_result(results, model_fig_dir, self.experiment,self.config)
 
-        # scio.savemat(f'{self.config.RESULT_DIR}/{target_file}.mat', results) # MATLAB file
-
-        # fig, axs = plt.subplots(4,figsize=(15,10))
-        # loss_type = ["total loss", "MSE", "KLD","behavior loss"]
-        # for i in range(0, 4):
-        #     axs[i].plot(np.arange(1, len(train_loss_all)+1)/self.config.TRAIN.LOGS_PER_EPOCH,
-        #                 np.array(train_loss_all)[:, i], label='train loss')
-        #     axs[i].plot(np.arange(self.config.TRAIN.VAL_INTERVAL, self.config.TRAIN.NUM_UPDATES+1,
-        #                           self.config.TRAIN.VAL_INTERVAL),
-        #                 np.array(val_loss_all)[:, i], label='test loss')
-        #     axs[i].set_ylabel(loss_type[i])
-        # axs[2].set_xlabel('epoch')
-        # axs[2].legend(loc="upper right")
-
-        # plt.savefig(f'{self.config.FIG_DIR}/{target_file}_learning_curve.png', bbox_inches='tight')
-        # plt.cla()
-        # plt.close('all')
+        
 
     def train_1_epoch(self) -> list:
         batch_size = self.config.TRAIN.BATCH_SIZE
@@ -240,7 +223,7 @@ class stVAE_runner:
         return results
 
     @staticmethod # 静态方法,不需要实例化就可以调用
-    def plot_result(results, save_dir, target_file, epoch, has_var, need_show):
+    def plot_result(results, save_dir, target_file, config):
         # print(f"Saving plot to: {save_dir}/{target_file}_{epoch}.png")
         # inferred smoothed spike counts
         plot_time = np.arange(0, 10, 0.1) # 1 represent 0.1 s
@@ -283,3 +266,18 @@ class stVAE_runner:
                 axs[row,col].plot(plot_time, results["latent_mu"][plot_indexes, d])
                 #axs[3, 1].plot(plot_time, gaussian_filter1d(results["latent_mu"][plot_indexes, d], sigma=10))
         plt.savefig(f'{save_dir}/{target_file}_latent.png', bbox_inches='tight')
+
+        # plot loss
+        fig, axs = plt.subplots(4,figsize=(15,10))
+        loss_type = ["total loss", "MSE", "KLD"]
+        for i in range(0, 3):
+            axs[i].plot(np.arange(1, len(results['train_loss_all'])+1)/config.TRAIN.LOGS_PER_EPOCH,
+                        np.array(results['train_loss_all'])[:, i], label='train loss')
+            axs[i].plot(np.arange(config.TRAIN.VAL_INTERVAL, config.TRAIN.NUM_UPDATES+1,
+                                  config.TRAIN.VAL_INTERVAL),
+                        np.array(results['val_loss_all'])[:, i], label='test loss')
+            axs[i].set_ylabel(loss_type[i])
+        axs[2].set_xlabel('epoch')
+        axs[2].legend(loc="upper right")
+
+        plt.savefig(f'{save_dir}/{target_file}_learning_curve.png', bbox_inches='tight')

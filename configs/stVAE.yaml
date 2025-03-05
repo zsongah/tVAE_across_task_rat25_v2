@@ -45,7 +45,7 @@ TRAIN:
   BATCH_SIZE_TEST: 1000000  # 测试时可以设置较大的batch size
   STEP_SIZE: 1
   STEP_SIZE_TEST: 10
-  NUM_UPDATES: 40          # 更新步数上限
+  NUM_UPDATES: 100          # 更新步数上限
   CLIP_GRAD_NORM: 0.5
   LR:
     INIT: 0.005
