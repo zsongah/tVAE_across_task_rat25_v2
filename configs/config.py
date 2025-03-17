@@ -1,5 +1,6 @@
 from typing import List, Optional, Union
 from yacs.config import CfgNode
+import os
 
 DEFAULT_CONFIG_DIR = "configs/"
 CONFIG_FILE_SEPARATOR = ","

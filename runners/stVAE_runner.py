@@ -7,7 +7,7 @@ from torch.optim import AdamW
 from torch.optim.lr_scheduler import LambdaLR
 import torch.nn.functional
 from tqdm import tqdm
-from data.data_preparation import get_batch_random, get_batch_ss, get_batch, process_trials
+from data.data_preparation import get_batch_random, get_batch_ss, get_batch, process_trials,segment_all
 from models.stVAE import VAE, initialize_weights
 from data.dataset import Dataset
 import pdb
@@ -25,18 +25,18 @@ class stVAE_runner:
                          self.data.out_neuron_num).to(self.device) # 将模型参数都移动到指定设备上。
         self.optimizer = AdamW(
             list(filter(lambda p: p.requires_grad, self.model.parameters())), #返回模型中可学习的参数
-            lr=config.TRAIN.LR.INIT,
-            weight_decay=config.TRAIN.WEIGHT_DECAY,
+            lr=config.TRAIN.LR.INIT, # initial learnig rate + scheduler strategy
+            weight_decay=config.TRAIN.WEIGHT_DECAY, # regularization, avoid overfitting
         )
 
-        def lr_lambda(current_step):
+        def lr_lambda(current_step): # scheduler.step() to move next step.
             if current_step < config.TRAIN.LR.WARMUP:
                 return float(current_step) / float(max(1, config.TRAIN.LR.WARMUP))
             progress = float(current_step - config.TRAIN.LR.WARMUP) / float(max(1, config.TRAIN.NUM_UPDATES - config.TRAIN.LR.WARMUP))
             return 0.5 * (1. + np.cos(np.pi * progress))  # Cosine annealing
         
         self.scheduler = LambdaLR(self.optimizer, lr_lambda)
- 
+
     def run(self):
         ### make directories for saving results and figures
         if not os.path.exists(self.config.RESULT_DIR): # result
@@ -125,6 +125,7 @@ class stVAE_runner:
             
             self.optimizer.zero_grad()
             loss.backward()
+
             # 限制模型参数的梯度值在一定范围内,以防止梯度爆炸
             torch.nn.utils.clip_grad_norm_(self.model.parameters(), self.config.TRAIN.CLIP_GRAD_NORM)
             self.optimizer.step()
@@ -161,7 +162,6 @@ class stVAE_runner:
         # if self.data.task == '2MC':
         movements = np.empty((0, 2))
         actions = np.empty((0, 1))
-        predicted_actions = np.empty((0, 1))
         # else:
         #     movements = np.empty((0, 1))
         trials = np.empty((0, 1), dtype=int)
@@ -213,7 +213,7 @@ class stVAE_runner:
                    'predictions': predictions,
                    'movements': movements,
                    'actions': actions,
-                   'predicted_actions': predicted_actions,
+
                    'trials': trials,
                    'events': events,
                    'latent_mu': latent_mu,
@@ -222,6 +222,76 @@ class stVAE_runner:
 
         return results
 
+    def eval_train(self) -> list:
+        data_segment = segment_all(self.data.data_before_segment,self.config.MODEL.TIME_WINDOW,
+                                        self.config.TRAIN.STEP_SIZE_TEST, self.config.TRAIN.STEP_SIZE_TEST)
+        train_in = data_segment['M1_train'].to(self.device)
+        train_out = data_segment['M1_train'].to(self.device)
+        train_trial_no = data_segment['trial_No_train'].to(self.device)
+        train_movements = data_segment['movements_train'].to(self.device)
+        train_actions = data_segment['actions_train'].to(self.device)
+        train_events = data_segment['events_train'].to(self.device)
+        latent_dim = self.config.MODEL.LATENT_DIM
+        batch_size = self.config.TRAIN.BATCH_SIZE_TEST # test batch size
+        step_size = self.config.TRAIN.STEP_SIZE_TEST# test step size
+        self.model.eval() # turn on evaluation mode
+        point_num = 0
+        total_loss = [0., 0., 0] # 
+        predictions = np.empty((0, self.data.out_neuron_num))
+        truth = np.empty((0, self.data.out_neuron_num))
+        movements = np.empty((0, 2))
+        actions = np.empty((0, 1))
+        trials = np.empty((0, 1), dtype=int)
+        events = np.empty((0, 1), dtype=int)
+        latent_mu = np.empty((0, latent_dim))
+        latent_std = np.empty((0, latent_dim))
+        with torch.no_grad(): # 禁止自动求导
+            for start_idx in range(0, self.data.train_in.size(1), batch_size):
+                # 取后seq-1个数据做evaluation
+                data, _, _ = get_batch_ss(train_in, batch_size, start_idx, step_size)             
+                _, _, targets = get_batch_ss(train_out, batch_size, start_idx, step_size)
+                _, _, movement = get_batch_ss(train_movements, batch_size, start_idx, step_size)
+                _, _, trial_no = get_batch_ss(train_trial_no, batch_size, start_idx, step_size)
+                _, _, event = get_batch_ss(train_events, batch_size, start_idx, step_size)
+                _, _, action = get_batch_ss(train_actions, batch_size, start_idx, step_size)
+
+                output, mu, log_var = self.model(data)
+                output_valid = output[-step_size:].permute(1, 0, 2).reshape(-1, self.data.out_neuron_num)
+                mu_valid = mu[-step_size:]
+                log_var_valid = log_var[-step_size:]
+
+                loss, mse, kld = self.model.loss_function(output_valid, targets, mu_valid, log_var_valid, 
+                                                                            self.beta)
+
+                for i, item in enumerate([loss, mse, kld]):
+                    total_loss[i] += output_valid.size(0) * item.item()
+                point_num += output_valid.size(0)
+
+                predictions = np.vstack((predictions, output_valid.cpu().numpy()))
+                truth = np.vstack((truth, targets.cpu().numpy()))
+                movements = np.vstack((movements, movement.cpu().numpy()))
+                trials = np.vstack((trials, trial_no.cpu().numpy()))
+                events = np.vstack((events, event.cpu().numpy()))
+                actions = np.vstack((actions, action.cpu().numpy()))
+
+                latent_mu = np.vstack(
+                    (latent_mu, mu_valid.permute(1, 0, 2).reshape(-1, latent_dim).cpu().numpy()))
+                latent_std = np.vstack(
+                    (latent_std, torch.exp(0.5 * log_var_valid.permute(1, 0, 2).reshape(-1, latent_dim)).cpu().numpy()))
+                
+        loss = [total_loss[i] / point_num for i in range(3)] # 每个点的loss
+        results = {'loss': loss,
+                    'truth': truth,
+                    'predictions': predictions,
+                    'movements': movements,
+                    'actions': actions,
+                    'trials': trials,
+                    'events': events,
+                    'latent_mu': latent_mu,
+                    'latent_std': latent_std,
+                    }
+        return results
+    
     @staticmethod # 静态方法,不需要实例化就可以调用
     def plot_result(results, save_dir, target_file, config):
         # print(f"Saving plot to: {save_dir}/{target_file}_{epoch}.png")
