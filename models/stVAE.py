@@ -2,7 +2,7 @@ from typing import Tuple
 import torch
 from torch import nn, Tensor
 import torch.nn.functional
-from models.stVAE_modules import Encoder, Decoder, Conv_Encoder
+from models.stVAE_modules import Encoder, Decoder, Conv_Encoder 
 
 
 class VAE(nn.Module): # nn.module is the base class for all neural network modules in pytorch

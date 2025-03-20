@@ -9,7 +9,22 @@ _C = CfgNode(new_allowed=True) # 创建一个名为_C的配置节点(config node
 _C.SEED = 1 # previous 42
 _C.RESULT_DIR = "results/"
 _C.FIG_DIR = "figs/"
-# _C.EVA_DIR = "evaluation/"
+
+_C.DATA = CfgNode(new_allowed=True)
+_C.DATA.RAT = ""         # 示例: 实验动物或对象标识
+_C.DATA.TEST_FOLD = 0             # 用于交叉验证等
+_C.DATA.DAY = ""        # 日期标识
+_C.DATA.TASK = ""     # 数据任务类型
+
+_C.PREPROCESS = CfgNode(new_allowed=True)
+_C.PREPROCESS.BIN_SIZE = 0.1
+_C.PREPROCESS.BEFORE_CUE_LONG = 2       # seconds, 训练时使用的时间段
+_C.PREPROCESS.BEFORE_CUE = 0            # cue前的时间点（不包含cue时刻）
+_C.PREPROCESS.AFTER_CUE = 0           # cue后的时间段
+_C.PREPROCESS.BEFORE_PRESS = 1          # press前的时间段
+_C.PREPROCESS.AFTER_PRESS = 0.5         # press后立即的时间段
+_C.PREPROCESS.AFTER_RELEASE = 1         # release后不包括该点的时间段
+_C.PREPROCESS.AFTER_RELEASE_LONG = 2    # release后的长时间段（训练时需要）
 
 def get_cfg_defaults():
     """Get default config (yacs config node)."""

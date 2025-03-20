@@ -4,6 +4,7 @@ import torch
 import numpy as np
 import random
 from runners.stVAE_runner import stVAE_runner
+from runners.LFADS_runner import LFADS_runner
 
 def run_exp(config, dataset, proj_name_1mc):
     np.random.seed(config.SEED)
@@ -20,8 +21,14 @@ def run_exp(config, dataset, proj_name_1mc):
                         dataset=dataset,
                         experiment_name = experiment,
                         )
+    elif proj_name_1mc == 'LFADS':
+        runner = LFADS_runner(config=config, 
+                    dataset=dataset,
+                    experiment_name = experiment,
+                    )
     runner.run() # 其他模型的runner类也要定义run然后可以训练参数并且保存checkpoint以及结果图。
     print('\n')
+    
 
 def main():
 
@@ -31,12 +38,14 @@ def main():
     # '''
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f'Using device: {device}')
     rat = '025'
     latent_dims = [6] 
     task_1mc = '1MC'
     day_1mc = '2020-07-16' # 数字之间加下划线不识别
 
-    proj_name_1mc = 'stVAE' # 加载不同模型
+    # stVAE/LFADS
+    proj_name_1mc = 'LFADS' # 加载不同模型
 
     config_file = proj_name_1mc
     for test_fold in [0]:

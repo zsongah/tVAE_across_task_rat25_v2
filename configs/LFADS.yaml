@@ -1,0 +1,86 @@
+# configs/LFADS.yaml
+# -----------------------------------------------------------------------------
+# 数据设置
+# -----------------------------------------------------------------------------
+DATA:
+  RAT: ""         # 示例: 实验动物或对象标识
+  TEST_FOLD: 0             # 用于交叉验证等
+  DAY: ""        # 日期标识
+  TASK: ""     # 数据任务类型
+
+# -----------------------------------------------------------------------------
+# 数据预处理设置
+# -----------------------------------------------------------------------------
+PREPROCESS:
+  BIN_SIZE: 0.1
+  BEFORE_CUE_LONG: 2       # seconds, 训练时使用的时间段
+  BEFORE_CUE: 0            # cue前的时间点（不包含cue时刻）
+  AFTER_CUE: 0           # cue后的时间段
+  BEFORE_PRESS: 1          # press前的时间段
+  AFTER_PRESS: 0.5         # press后立即的时间段
+  AFTER_RELEASE: 1         # release后不包括该点的时间段
+  AFTER_RELEASE_LONG: 2    # release后的长时间段（训练时需要）
+
+# -----------------------------------------------------------------------------
+# 模型专属设置
+# -----------------------------------------------------------------------------
+
+MODEL:
+  NAME: "LFADS"
+  ENCOD_DATA_DIM: 16 # neurons
+  ENCOD_SEQ_LEN: 25
+  RECON_SEQ_LEN: 25
+  TIME_WINDOW: 25
+  EXT_INPUT_DIM: 0
+  IC_ENC_SEQ_LEN: 0
+  IC_ENC_DIM: 32
+  CI_LAG: 1
+  CI_ENC_DIM: 0 #32
+  CON_DIM: 0 #16
+  CO_DIM: 0 #4
+  IC_DIM: 32
+  GEN_DIM: 32
+  LATENT_DIM: 6
+  
+DROPOUT_RATE: 0.3
+CELL_CLIP: 5.0
+LOSS_SCALE: 1.0
+RECON_REDUCE_MEAN: True
+
+#--------------------priors / posteriors-------------------
+IC_POST_VAR_MIN: 1.0e-4
+
+# -----------------------------------------------------------------------------
+# 训练配置设置
+# -----------------------------------------------------------------------------
+TRAIN:
+  NUM_UPDATES: 50   
+  CLIP_GRAD_NORM: 0.5
+  BATCH_SIZE: 128
+  BATCH_SIZE_TEST: 1000000
+  STEP_SIZE: 1
+  STEP_SIZE_TEST: 10
+  VAL_INTERVAL: 5
+  LOGS_PER_EPOCH: 4
+  WEIGHT_DECAY: 0.01
+  LR:
+    INIT: 0.005
+    SCHEDULE: True
+    SCHEDULER: "cosine"
+    WARMUP: 10
+
+  # L2 正则化参数
+  L2_START_EPOCH: 0
+  L2_INCREASE_EPOCH: 80
+  L2_IC_ENC_SCALE: 0.0
+  L2_CI_ENC_SCALE: 0.0
+  L2_GEN_SCALE: 0.0
+  L2_CON_SCALE: 0.0
+  
+  # KL 散度参数
+  KL_START_EPOCH: 0
+  KL_INCREASE_EPOCH: 80
+  KL_IC_SCALE: 1.0e-7
+  KL_CO_SCALE: 1.0e-7
+
+ 
