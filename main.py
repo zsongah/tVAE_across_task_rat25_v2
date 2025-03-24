@@ -54,7 +54,7 @@ def main():
     proj_name_1mc = 'DFINE' # 加载不同模型
 
     config_file = proj_name_1mc
-    for test_fold in [0]:
+    for test_fold in [0]: 
         for latent_dim in latent_dims:  # [6]:
             config_1mc = get_config(config_file, [
                 'DATA.RAT', rat,

@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+import pdb
 
 class LDM(nn.Module):
     '''
@@ -29,7 +30,7 @@ class LDM(nn.Module):
         - R_log_diag: torch.Tensor, shape: (self.dim_a, ), Log-diagonal of observation noise covariance matrix  (R, therefore it is diagonal and PSD), default ones
         '''
         super(LDM, self).__init__()
-
+        self.device = kwargs.pop('device', torch.device('cpu'))
         self.dim_x = kwargs.pop('dim_x', None)
         self.dim_a = kwargs.pop('dim_a',None)
 
@@ -183,9 +184,9 @@ class LDM(nn.Module):
         - Lambda_pred_all: torch.Tensor, shape: (num_steps, num_seq, dim_x, dim_x), Dynamic latent factor estimation error covariance predictions (t+1|t) where first index of the second dimension has P_{1|0}
         - Lambda_t_all: torch.Tensor, shape: (num_steps, num_seq, dim_x, dim_x), Dynamic latent factor estimation error covariance filtered estimates (t|t) where first index of the second dimension has P_{0|0}
         '''
-    
+      
         if mask is None:
-            mask = torch.ones(a.shape[:-1], dtype = torch.float32)
+            mask = torch.ones(a.shape[:-1], dtype = torch.float32, device = self.device)
 
         num_seq, num_steps, _ = a.shape
 
@@ -196,6 +197,7 @@ class LDM(nn.Module):
         # To make sure we do not accidentally use the real outputs in the steps with missing values, set them to a dummy value, e.g., 0.
         # The dummy values of observations at masked points are irrelevant because:
         # Kalman disregards the observations by setting Kalman Gain to 0 in K = torch.mul(K, mask[:, t, ...].unsqueeze(dim=1)) @ line 204
+        
         a_masked = torch.mul(a, mask) # (num_seq, num_steps, dim_a) x (num_seq, num_steps, 1)
         mu_0 = self.mu_0.unsqueeze(dim = 0).repeat(num_seq, 1) # (num_seq, dim_x)
         Lambda_0 = self.Lambda_0.unsqueeze(dim = 0).repeat(num_seq, 1, 1) # (num_seq, dim_x, dim_x)
@@ -221,7 +223,7 @@ class LDM(nn.Module):
 
             # Project system uncertainty into measurement space, get Kalman Gain
             S = C_t @ Lambda_pred @ torch.permute(C_t, (0,2,1)) + R # (num_seq, dim_a, dim_a)
-            S_inv = torch.inverse(S) # (num_seq, dim_a, dim_a)
+            S_inv = torch.inverse(S.cpu()).to(S.device) # (num_seq, dim_a, dim_a)
             K = Lambda_pred @ torch.permute(C_t, (0, 2, 1)) @ S_inv # (num_seq, dim_x, dim_a)
             K = torch.mul(K, mask[:,t, ...].unsqueeze(dim = 1))   # (num_seq, dim_x, dim_a) x (num_seq, 1,  1)
 

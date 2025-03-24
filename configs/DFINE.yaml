@@ -52,14 +52,14 @@ MODEL:
 
 loss:
   # L2 regularization loss scale (we recommend a grid-search for the best value, i.e., a grid of [1e-4, 5e-4, 1e-3, 2e-3]). Please use 0 for nonlinear manifold simulations as it leads to a better performance. 
-  scale_l2: !!float 2e-3
+  scale_l2: !!float 2e-1
   # List of number of steps ahead for which DFINE is optimized. For unsupervised and supervised versions, default values are [1,2,3,4] and [1,2], respectively. 
   steps_ahead: [1]
   # If _config.model.supervise_behv is True, scale for MSE of behavior reconstruction (We recommend a grid-search for the best value. It should be set to a large value).
   scale_behv_recons: 20
 
 TRAIN:
-  NUM_UPDATES: 50   
+  NUM_UPDATES: 25   
   CLIP_GRAD_NORM: 0.5
   BATCH_SIZE: 128
   BATCH_SIZE_TEST: 1000000

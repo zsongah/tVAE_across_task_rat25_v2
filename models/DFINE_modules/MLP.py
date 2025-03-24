@@ -1,4 +1,5 @@
 import torch.nn as nn
+import torch
 
 class MLP(nn.Module):
     '''
@@ -21,6 +22,7 @@ class MLP(nn.Module):
         '''
         
         super(MLP, self).__init__()
+        self.device = kwargs.pop('device', torch.device('cpu'))
         self.input_dim = kwargs.get('input_dim', None)
         self.output_dim = kwargs.get('output_dim', None)
         self.layer_list = kwargs.get('layer_list', None)

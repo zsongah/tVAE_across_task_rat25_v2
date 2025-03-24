@@ -117,7 +117,7 @@ class DFINE_runner:
         return loss_log
 
     def evaluate(self)->dict:
-        latent_dim = self.config.model.dim_x
+        latent_dim = self.config.MODEL.LATENT_DIM
         batch_size = self.config.TRAIN.BATCH_SIZE_TEST
         step_size = self.config.TRAIN.STEP_SIZE_TEST
         self.model.eval()
@@ -150,7 +150,7 @@ class DFINE_runner:
                 behv_loss = loss_dict['behv_loss']
 
                 pred_valid = model_vars['y_pred'][:,-step_size:,:].reshape(-1, self.config.model.dim_y)
-                latent_valid = model_vars['x_pred'][:,-step_size:,:].reshape(-1, self.config.model.dim_xx)
+                latent_valid = model_vars['x_pred'][:,-step_size:,:].reshape(-1, self.config.MODEL.LATENT_DIM)
 
 
                 for i, item in enumerate([loss, recon_loss, reg_loss, behv_loss]):
@@ -176,7 +176,7 @@ class DFINE_runner:
         return results
     
     def eval_train(self) -> dict:
-        data_segment = segment_all(self.data.data_before_segment,self.config.model.time_window,
+        data_segment = segment_all(self.data.data_before_segment,self.config.MODEL.TIME_WINDOW,
                                         self.config.TRAIN.STEP_SIZE_TEST, self.config.TRAIN.STEP_SIZE_TEST)
         train_in = data_segment['M1_train'].to(self.device)
         train_out = data_segment['M1_train'].to(self.device)
@@ -184,7 +184,7 @@ class DFINE_runner:
         train_movements = data_segment['movements_train'].to(self.device)
         train_actions = data_segment['actions_train'].to(self.device)
         train_events = data_segment['events_train'].to(self.device)
-        latent_dim = self.config.model.dim_x
+        latent_dim = self.config.MODEL.LATENT_DIM
         batch_size = self.config.TRAIN.BATCH_SIZE_TEST # test batch size
         step_size = self.config.TRAIN.STEP_SIZE_TEST# test step size
         self.model.eval() # turn on evaluation mode
@@ -217,7 +217,7 @@ class DFINE_runner:
                 behv_loss = loss_dict['behv_loss']
 
                 pred_valid = model_vars['y_pred'][:,-step_size:,:].reshape(-1, self.config.model.dim_y)
-                latent_valid = model_vars['x_pred'][:,-step_size:,:].reshape(-1, self.config.model.dim_xx)
+                latent_valid = model_vars['x_pred'][:,-step_size:,:].reshape(-1, self.config.MODEL.LATENT_DIM)
 
                 for i, item in enumerate([loss, recon_loss, reg_loss, behv_loss]):
                     total_loss[i] += item.item()

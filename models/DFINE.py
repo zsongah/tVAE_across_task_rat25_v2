@@ -45,25 +45,29 @@ class DFINE(nn.Module):
                        W_log_diag=W_log_diag, R_log_diag=R_log_diag,
                        mu_0=mu_0, Lambda_0=Lambda_0,
                        is_W_trainable=self.config.model.is_W_trainable,
-                       is_R_trainable=self.config.model.is_R_trainable)
+                       is_R_trainable=self.config.model.is_R_trainable,
+                       device = self.device)
 
         # Initialize encoder and decoder(s)
         self.encoder = self._get_MLP(input_dim=self.dim_y, 
                                      output_dim=self.dim_a, 
                                      layer_list=self.config.model.hidden_layer_list, 
-                                     activation_str=self.config.model.activation)
+                                     activation_str=self.config.model.activation,
+                                     device = self.device)
 
         self.decoder = self._get_MLP(input_dim=self.dim_a, 
                                      output_dim=self.dim_y, 
                                      layer_list=self.config.model.hidden_layer_list[::-1], #反转列表
-                                     activation_str=self.config.model.activation)
+                                     activation_str=self.config.model.activation,
+                                     device = self.device)
         
         # If asked to train supervised model, get behavior mapper
         if self.config.model.supervise_behv:
             self.mapper = self._get_MLP(input_dim=self.dim_a, 
                                         output_dim=self.dim_behv, 
                                         layer_list=self.config.model.hidden_layer_list_mapper, 
-                                        activation_str=self.config.model.activation_mapper)
+                                        activation_str=self.config.model.activation_mapper,
+                                        device = self.device)
 
     def _set_dims_and_scales(self):
 
@@ -104,7 +108,7 @@ class DFINE(nn.Module):
 
         return A, C, W_log_diag, R_log_diag, mu_0, Lambda_0
 
-    def _get_MLP(self, input_dim, output_dim, layer_list, activation_str='tanh'):
+    def _get_MLP(self, input_dim, output_dim, layer_list, activation_str='tanh', device = 'cpu'):
         '''
         Creates an MLP object
 
@@ -127,8 +131,8 @@ class DFINE(nn.Module):
                         output_dim=output_dim,
                         layer_list=layer_list,
                         activation_fn=activation_fn,
-                        kernel_initializer_fn=kernel_initializer_fn
-                        )
+                        kernel_initializer_fn=kernel_initializer_fn,
+                        device = device)
         return mlp_network
     
 
@@ -175,7 +179,7 @@ class DFINE(nn.Module):
 
         # Create the mask if is None 
         if mask is None:
-            mask = torch.ones(y.shape[:-1], dtype=torch.float32).unsqueeze(dim=-1)
+            mask = torch.ones(y.shape[:-1], dtype=torch.float32,device = self.device).unsqueeze(dim=-1)
 
         # Get the encoded low-dimensional manifold factors (project via nonlinear manifold embedding) -> the outputs are (num_seq * num_steps, dim_a)
         a_hat = self.encoder(y.reshape(-1, self.dim_y))
@@ -246,7 +250,7 @@ class DFINE(nn.Module):
         '''
         # Create the mask if it's None
         if mask is None:
-            mask = torch.ones(y.shape[:-1], dtype=torch.float32).unsqueeze(dim=-1)
+            mask = torch.ones(y.shape[:-1], dtype=torch.float32, device = self.device).unsqueeze(dim=-1)
         
         # Dump individual loss values for logging or Tensorboard
         loss_dict = dict()

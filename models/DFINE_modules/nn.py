@@ -7,7 +7,7 @@ Shanechi Lab, University of Southern California
 
 import torch 
 import torch.nn as nn
-
+import pdb
 
 def compute_mse(y_flat, y_hat_flat, mask_flat=None):
     '''
@@ -26,7 +26,7 @@ def compute_mse(y_flat, y_hat_flat, mask_flat=None):
     '''
 
     if mask_flat is None: 
-        mask_flat = torch.ones(y_flat.shape[:-1], dtype=torch.float32)
+        mask_flat = torch.ones(y_flat.shape[:-1], dtype=torch.float32, device=y_flat.device)
 
     # Make sure mask is 2D
     if len(mask_flat.shape) != len(y_flat.shape):
