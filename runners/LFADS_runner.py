@@ -1,7 +1,6 @@
 import torch
 import os
 import numpy as np
-from torch import Tensor
 from torch.optim import AdamW
 from tqdm import tqdm
 from models.LFADS import LFADS

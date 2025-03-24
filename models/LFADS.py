@@ -10,7 +10,7 @@ from .LFADS_modules.priors import MultivariateNormal,AutoregressiveMultivariateN
 from .LFADS_modules.l2 import compute_l2_penalty
 
 class LFADS(nn.Module):
-    def __init__(self, config, device, model_type):
+    def __init__(self, config, device, model_type = 'LFADS'):
         super(LFADS, self).__init__()
         self.model_type = model_type
         self.config = config

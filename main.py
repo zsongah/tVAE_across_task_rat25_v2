@@ -5,6 +5,7 @@ import numpy as np
 import random
 from runners.stVAE_runner import stVAE_runner
 from runners.LFADS_runner import LFADS_runner
+from runners.DFINE_runner import DFINE_runner
 
 def run_exp(config, dataset, proj_name_1mc):
     np.random.seed(config.SEED)
@@ -23,6 +24,11 @@ def run_exp(config, dataset, proj_name_1mc):
                         )
     elif proj_name_1mc == 'LFADS':
         runner = LFADS_runner(config=config, 
+                    dataset=dataset,
+                    experiment_name = experiment,
+                    )
+    elif proj_name_1mc == 'DFINE':
+        runner = DFINE_runner(config=config, 
                     dataset=dataset,
                     experiment_name = experiment,
                     )
@@ -45,7 +51,7 @@ def main():
     day_1mc = '2020-07-16' # 数字之间加下划线不识别
 
     # stVAE/LFADS
-    proj_name_1mc = 'LFADS' # 加载不同模型
+    proj_name_1mc = 'DFINE' # 加载不同模型
 
     config_file = proj_name_1mc
     for test_fold in [0]:

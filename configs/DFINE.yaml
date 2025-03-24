@@ -1,0 +1,75 @@
+# configs/DFINE.yaml
+# -----------------------------------------------------------------------------
+# 模型专属设置：stVAE模型参数
+# -----------------------------------------------------------------------------
+
+model:
+  # Hidden layer list where each element is the number of neurons for that hidden layer of DFINE encoder/decoder.
+  hidden_layer_list: [32, 16]
+  # Activation function used in encoder and decoder layers
+  activation: 'tanh'
+  # Dimensionality of neural observations
+  dim_y: 16
+  # Dimensionality of manifold latent factor
+  dim_a: 6
+  # Dimensionality of dynamic latent factor
+  # dim_x: 6
+  # Initialization scale of LDM state transition matrix
+  init_A_scale: 1
+  # Initialization scale of LDM observation matrix
+  init_C_scale: 1
+  # Initialization scale of LDM process noise covariance matrix
+  init_W_scale: 0.5
+  # Initialization scale of LDM observation noise covariance matrix
+  init_R_scale: 0.5
+  # Initialization scale of dynamic latent factor estimation error covariance matrix
+  init_cov: 1
+  # Boolean for whether process noise covariance matrix W is learnable or not
+  is_W_trainable: True
+  # Boolean for whether observation noise covariance matrix R is learnable or not
+  is_R_trainable: True
+  # Initialization type of LDM parameters, see nn.get_kernel_initializer_function for detailed definition and supported types
+  ldm_kernel_initializer: 'default'
+  # Initialization type of DFINE encoder and decoder parameters, see nn.get_kernel_initializer_function for detailed definition and supported types
+  nn_kernel_initializer: 'xavier_normal'
+  # Boolean for whether to learn a behavior-supervised model or not. It must be set to True if supervised model will be trained.  
+  supervise_behv: False
+  # Hidden layer list for the behavior mapper where each element is the number of neurons for that hidden layer of the mapper
+  hidden_layer_list_mapper: [20,20,20]
+  # Activation function used in mapper layers
+  activation_mapper: 'tanh'
+  # List of dimensions of behavior data to be decoded by mapper, check for any dimensionality mismatch 
+  which_behv_dims: [0,1,2,3]
+  # Boolean for whether to decode behavior from a_smooth
+  behv_from_smooth: True
+  # Number of steps to save DFINE checkpoints
+  save_steps: 10
+  #time_window: 25
+
+MODEL:
+  LATENT_DIM: 6  # same as model.dim_a/dim_x
+  TIME_WINDOW: 25  # same as model.time_window  
+
+loss:
+  # L2 regularization loss scale (we recommend a grid-search for the best value, i.e., a grid of [1e-4, 5e-4, 1e-3, 2e-3]). Please use 0 for nonlinear manifold simulations as it leads to a better performance. 
+  scale_l2: !!float 2e-3
+  # List of number of steps ahead for which DFINE is optimized. For unsupervised and supervised versions, default values are [1,2,3,4] and [1,2], respectively. 
+  steps_ahead: [1]
+  # If _config.model.supervise_behv is True, scale for MSE of behavior reconstruction (We recommend a grid-search for the best value. It should be set to a large value).
+  scale_behv_recons: 20
+
+TRAIN:
+  NUM_UPDATES: 50   
+  CLIP_GRAD_NORM: 0.5
+  BATCH_SIZE: 128
+  BATCH_SIZE_TEST: 1000000
+  STEP_SIZE: 1
+  STEP_SIZE_TEST: 10
+  VAL_INTERVAL: 5
+  LOGS_PER_EPOCH: 4
+  WEIGHT_DECAY: 0.01
+  LR:
+    INIT: 0.005
+    SCHEDULE: True
+    SCHEDULER: "cosine"
+    WARMUP: 10
