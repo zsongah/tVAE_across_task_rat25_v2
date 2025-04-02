@@ -6,6 +6,7 @@ import random
 from runners.stVAE_runner import stVAE_runner
 from runners.LFADS_runner import LFADS_runner
 from runners.DFINE_runner import DFINE_runner
+from runners.LDF_runner import LDF_runner
 
 def run_exp(config, dataset, proj_name_1mc):
     np.random.seed(config.SEED)
@@ -32,6 +33,12 @@ def run_exp(config, dataset, proj_name_1mc):
                     dataset=dataset,
                     experiment_name = experiment,
                     )
+    elif proj_name_1mc == 'LDF':
+        runner = LDF_runner(config=config, 
+                    dataset=dataset,
+                    experiment_name = experiment,
+                    )
+        
     runner.run() # 其他模型的runner类也要定义run然后可以训练参数并且保存checkpoint以及结果图。
     print('\n')
     
@@ -50,21 +57,22 @@ def main():
     task_1mc = '1MC'
     day_1mc = '2020-07-16' # 数字之间加下划线不识别
 
-    # stVAE/LFADS
-    proj_name_1mc = 'DFINE' # 加载不同模型
-
-    config_file = proj_name_1mc
-    for test_fold in [0]: 
-        for latent_dim in latent_dims:  # [6]:
-            config_1mc = get_config(config_file, [
-                'DATA.RAT', rat,
-                'DATA.TASK', task_1mc,
-                'DATA.DAY', day_1mc, # can not use number_number 
-                'DATA.TEST_FOLD', test_fold,
-                'MODEL.LATENT_DIM', latent_dim,
-            ])
-            dataset_1mc = Dataset(config_1mc, rat, day_1mc, task_1mc, test_fold, device)
-            run_exp(config_1mc, dataset_1mc, proj_name_1mc)
+    # stVAE/LFADS/DFINE/LDF
+    
+    proj_name_1mcs = ['LDF'] # 加载不同模型
+    for proj_name_1mc in proj_name_1mcs:
+        config_file = proj_name_1mc
+        for test_fold in [0]: 
+            for latent_dim in latent_dims:  # [6]:
+                config_1mc = get_config(config_file, [
+                    'DATA.RAT', rat,
+                    'DATA.TASK', task_1mc,
+                    'DATA.DAY', day_1mc, # can not use number_number 
+                    'DATA.TEST_FOLD', test_fold,
+                    'MODEL.LATENT_DIM', latent_dim,
+                ])
+                dataset_1mc = Dataset(config_1mc, rat, day_1mc, task_1mc, test_fold, device)
+                run_exp(config_1mc, dataset_1mc, proj_name_1mc)
 
 if __name__ == '__main__':
     main()

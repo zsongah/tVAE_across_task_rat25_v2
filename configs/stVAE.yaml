@@ -6,13 +6,13 @@
 MODEL:
   NAME: "stVAE"     # 模型名称，用于在日志或者保存文件中标识模型种类
   VARIATIONAL: True        # 是否使用变分自编码器方式训练
-  HIDDEN_SIZE: 64         # 隐藏层大小
+  HIDDEN_SIZE: 32         # 隐藏层大小
   DROPOUT: 0            # dropout 概率
   NUM_HEADS: 2            # 多头自注意力机制的头数
   N_LAYERS_ENCODER: 1      # 编码器层数
   N_LAYERS_DECODER: 1      # 解码器层数
   DECODER_POS: True        # 解码器是否使用位置编码
-  EMBED_DIM: 24            # 嵌入维度
+  EMBED_DIM: 32            # 嵌入维度
   LATENT_DIM: 6            # 潜在向量的维度
   TIME_WINDOW: 25          # 时间窗口长度
 

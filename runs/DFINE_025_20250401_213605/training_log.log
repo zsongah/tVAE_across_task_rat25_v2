@@ -1,0 +1,151 @@
+04/01/2025 09:36:08 PM - DFINE_Logger - INFO - Epoch 1, TRAIN
+04/01/2025 09:36:08 PM - DFINE_Logger - INFO - total_loss: 18.44849
+04/01/2025 09:36:08 PM - DFINE_Logger - INFO - recon_loss: 14.32723
+04/01/2025 09:36:08 PM - DFINE_Logger - INFO - reg_loss: 4.12125
+04/01/2025 09:36:08 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:11 PM - DFINE_Logger - INFO - Epoch 2, TRAIN
+04/01/2025 09:36:11 PM - DFINE_Logger - INFO - total_loss: 15.98795
+04/01/2025 09:36:11 PM - DFINE_Logger - INFO - recon_loss: 11.94545
+04/01/2025 09:36:11 PM - DFINE_Logger - INFO - reg_loss: 4.04250
+04/01/2025 09:36:11 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:13 PM - DFINE_Logger - INFO - Epoch 3, TRAIN
+04/01/2025 09:36:13 PM - DFINE_Logger - INFO - total_loss: 9.90947
+04/01/2025 09:36:13 PM - DFINE_Logger - INFO - recon_loss: 5.87877
+04/01/2025 09:36:13 PM - DFINE_Logger - INFO - reg_loss: 4.03070
+04/01/2025 09:36:13 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:15 PM - DFINE_Logger - INFO - Epoch 4, TRAIN
+04/01/2025 09:36:15 PM - DFINE_Logger - INFO - total_loss: 6.70790
+04/01/2025 09:36:15 PM - DFINE_Logger - INFO - recon_loss: 3.32971
+04/01/2025 09:36:15 PM - DFINE_Logger - INFO - reg_loss: 3.37819
+04/01/2025 09:36:15 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:17 PM - DFINE_Logger - INFO - Epoch 5, TRAIN
+04/01/2025 09:36:17 PM - DFINE_Logger - INFO - total_loss: 5.04840
+04/01/2025 09:36:17 PM - DFINE_Logger - INFO - recon_loss: 2.84294
+04/01/2025 09:36:17 PM - DFINE_Logger - INFO - reg_loss: 2.20546
+04/01/2025 09:36:17 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:17 PM - DFINE_Logger - INFO - Epoch 5, VALID
+04/01/2025 09:36:17 PM - DFINE_Logger - INFO - total_loss: 4.37835
+04/01/2025 09:36:17 PM - DFINE_Logger - INFO - recon_loss: 2.24647
+04/01/2025 09:36:17 PM - DFINE_Logger - INFO - reg_loss: 2.13188
+04/01/2025 09:36:17 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:20 PM - DFINE_Logger - INFO - Epoch 6, TRAIN
+04/01/2025 09:36:20 PM - DFINE_Logger - INFO - total_loss: 4.48853
+04/01/2025 09:36:20 PM - DFINE_Logger - INFO - recon_loss: 2.56000
+04/01/2025 09:36:20 PM - DFINE_Logger - INFO - reg_loss: 1.92853
+04/01/2025 09:36:20 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:22 PM - DFINE_Logger - INFO - Epoch 7, TRAIN
+04/01/2025 09:36:22 PM - DFINE_Logger - INFO - total_loss: 4.02038
+04/01/2025 09:36:22 PM - DFINE_Logger - INFO - recon_loss: 2.18445
+04/01/2025 09:36:22 PM - DFINE_Logger - INFO - reg_loss: 1.83592
+04/01/2025 09:36:22 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:24 PM - DFINE_Logger - INFO - Epoch 8, TRAIN
+04/01/2025 09:36:24 PM - DFINE_Logger - INFO - total_loss: 3.82565
+04/01/2025 09:36:24 PM - DFINE_Logger - INFO - recon_loss: 2.09968
+04/01/2025 09:36:24 PM - DFINE_Logger - INFO - reg_loss: 1.72596
+04/01/2025 09:36:24 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:26 PM - DFINE_Logger - INFO - Epoch 9, TRAIN
+04/01/2025 09:36:26 PM - DFINE_Logger - INFO - total_loss: 3.66805
+04/01/2025 09:36:26 PM - DFINE_Logger - INFO - recon_loss: 2.04756
+04/01/2025 09:36:26 PM - DFINE_Logger - INFO - reg_loss: 1.62048
+04/01/2025 09:36:26 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:28 PM - DFINE_Logger - INFO - Epoch 10, TRAIN
+04/01/2025 09:36:28 PM - DFINE_Logger - INFO - total_loss: 3.63209
+04/01/2025 09:36:28 PM - DFINE_Logger - INFO - recon_loss: 2.09622
+04/01/2025 09:36:28 PM - DFINE_Logger - INFO - reg_loss: 1.53587
+04/01/2025 09:36:28 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:28 PM - DFINE_Logger - INFO - Epoch 10, VALID
+04/01/2025 09:36:28 PM - DFINE_Logger - INFO - total_loss: 3.22621
+04/01/2025 09:36:28 PM - DFINE_Logger - INFO - recon_loss: 1.69924
+04/01/2025 09:36:28 PM - DFINE_Logger - INFO - reg_loss: 1.52697
+04/01/2025 09:36:28 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:30 PM - DFINE_Logger - INFO - Epoch 11, TRAIN
+04/01/2025 09:36:30 PM - DFINE_Logger - INFO - total_loss: 3.55177
+04/01/2025 09:36:30 PM - DFINE_Logger - INFO - recon_loss: 2.07406
+04/01/2025 09:36:30 PM - DFINE_Logger - INFO - reg_loss: 1.47771
+04/01/2025 09:36:30 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:33 PM - DFINE_Logger - INFO - Epoch 12, TRAIN
+04/01/2025 09:36:33 PM - DFINE_Logger - INFO - total_loss: 3.50852
+04/01/2025 09:36:33 PM - DFINE_Logger - INFO - recon_loss: 2.07554
+04/01/2025 09:36:33 PM - DFINE_Logger - INFO - reg_loss: 1.43298
+04/01/2025 09:36:33 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:35 PM - DFINE_Logger - INFO - Epoch 13, TRAIN
+04/01/2025 09:36:35 PM - DFINE_Logger - INFO - total_loss: 3.44995
+04/01/2025 09:36:35 PM - DFINE_Logger - INFO - recon_loss: 2.05635
+04/01/2025 09:36:35 PM - DFINE_Logger - INFO - reg_loss: 1.39361
+04/01/2025 09:36:35 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:37 PM - DFINE_Logger - INFO - Epoch 14, TRAIN
+04/01/2025 09:36:37 PM - DFINE_Logger - INFO - total_loss: 3.39861
+04/01/2025 09:36:37 PM - DFINE_Logger - INFO - recon_loss: 2.03993
+04/01/2025 09:36:37 PM - DFINE_Logger - INFO - reg_loss: 1.35868
+04/01/2025 09:36:37 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:39 PM - DFINE_Logger - INFO - Epoch 15, TRAIN
+04/01/2025 09:36:39 PM - DFINE_Logger - INFO - total_loss: 3.43148
+04/01/2025 09:36:39 PM - DFINE_Logger - INFO - recon_loss: 2.09692
+04/01/2025 09:36:39 PM - DFINE_Logger - INFO - reg_loss: 1.33457
+04/01/2025 09:36:39 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:39 PM - DFINE_Logger - INFO - Epoch 15, VALID
+04/01/2025 09:36:39 PM - DFINE_Logger - INFO - total_loss: 3.02454
+04/01/2025 09:36:39 PM - DFINE_Logger - INFO - recon_loss: 1.69241
+04/01/2025 09:36:39 PM - DFINE_Logger - INFO - reg_loss: 1.33213
+04/01/2025 09:36:39 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:41 PM - DFINE_Logger - INFO - Epoch 16, TRAIN
+04/01/2025 09:36:41 PM - DFINE_Logger - INFO - total_loss: 3.31621
+04/01/2025 09:36:41 PM - DFINE_Logger - INFO - recon_loss: 2.01385
+04/01/2025 09:36:41 PM - DFINE_Logger - INFO - reg_loss: 1.30236
+04/01/2025 09:36:41 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:43 PM - DFINE_Logger - INFO - Epoch 17, TRAIN
+04/01/2025 09:36:43 PM - DFINE_Logger - INFO - total_loss: 3.32353
+04/01/2025 09:36:43 PM - DFINE_Logger - INFO - recon_loss: 2.05735
+04/01/2025 09:36:43 PM - DFINE_Logger - INFO - reg_loss: 1.26618
+04/01/2025 09:36:43 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:46 PM - DFINE_Logger - INFO - Epoch 18, TRAIN
+04/01/2025 09:36:46 PM - DFINE_Logger - INFO - total_loss: 3.27499
+04/01/2025 09:36:46 PM - DFINE_Logger - INFO - recon_loss: 2.02659
+04/01/2025 09:36:46 PM - DFINE_Logger - INFO - reg_loss: 1.24839
+04/01/2025 09:36:46 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:48 PM - DFINE_Logger - INFO - Epoch 19, TRAIN
+04/01/2025 09:36:48 PM - DFINE_Logger - INFO - total_loss: 3.27467
+04/01/2025 09:36:48 PM - DFINE_Logger - INFO - recon_loss: 2.04684
+04/01/2025 09:36:48 PM - DFINE_Logger - INFO - reg_loss: 1.22783
+04/01/2025 09:36:48 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:50 PM - DFINE_Logger - INFO - Epoch 20, TRAIN
+04/01/2025 09:36:50 PM - DFINE_Logger - INFO - total_loss: 3.21335
+04/01/2025 09:36:50 PM - DFINE_Logger - INFO - recon_loss: 2.01106
+04/01/2025 09:36:50 PM - DFINE_Logger - INFO - reg_loss: 1.20229
+04/01/2025 09:36:50 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:50 PM - DFINE_Logger - INFO - Epoch 20, VALID
+04/01/2025 09:36:50 PM - DFINE_Logger - INFO - total_loss: 2.86459
+04/01/2025 09:36:50 PM - DFINE_Logger - INFO - recon_loss: 1.67066
+04/01/2025 09:36:50 PM - DFINE_Logger - INFO - reg_loss: 1.19393
+04/01/2025 09:36:50 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:52 PM - DFINE_Logger - INFO - Epoch 21, TRAIN
+04/01/2025 09:36:52 PM - DFINE_Logger - INFO - total_loss: 3.26181
+04/01/2025 09:36:52 PM - DFINE_Logger - INFO - recon_loss: 2.07589
+04/01/2025 09:36:52 PM - DFINE_Logger - INFO - reg_loss: 1.18591
+04/01/2025 09:36:52 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:54 PM - DFINE_Logger - INFO - Epoch 22, TRAIN
+04/01/2025 09:36:54 PM - DFINE_Logger - INFO - total_loss: 3.18414
+04/01/2025 09:36:54 PM - DFINE_Logger - INFO - recon_loss: 2.01617
+04/01/2025 09:36:54 PM - DFINE_Logger - INFO - reg_loss: 1.16797
+04/01/2025 09:36:54 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:56 PM - DFINE_Logger - INFO - Epoch 23, TRAIN
+04/01/2025 09:36:56 PM - DFINE_Logger - INFO - total_loss: 3.19486
+04/01/2025 09:36:56 PM - DFINE_Logger - INFO - recon_loss: 2.03206
+04/01/2025 09:36:56 PM - DFINE_Logger - INFO - reg_loss: 1.16280
+04/01/2025 09:36:56 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:36:59 PM - DFINE_Logger - INFO - Epoch 24, TRAIN
+04/01/2025 09:36:59 PM - DFINE_Logger - INFO - total_loss: 3.18559
+04/01/2025 09:36:59 PM - DFINE_Logger - INFO - recon_loss: 2.02660
+04/01/2025 09:36:59 PM - DFINE_Logger - INFO - reg_loss: 1.15899
+04/01/2025 09:36:59 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:37:01 PM - DFINE_Logger - INFO - Epoch 25, TRAIN
+04/01/2025 09:37:01 PM - DFINE_Logger - INFO - total_loss: 3.20298
+04/01/2025 09:37:01 PM - DFINE_Logger - INFO - recon_loss: 2.04612
+04/01/2025 09:37:01 PM - DFINE_Logger - INFO - reg_loss: 1.15686
+04/01/2025 09:37:01 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:37:01 PM - DFINE_Logger - INFO - Epoch 25, VALID
+04/01/2025 09:37:01 PM - DFINE_Logger - INFO - total_loss: 2.80550
+04/01/2025 09:37:01 PM - DFINE_Logger - INFO - recon_loss: 1.64914
+04/01/2025 09:37:01 PM - DFINE_Logger - INFO - reg_loss: 1.15635
+04/01/2025 09:37:01 PM - DFINE_Logger - INFO - behv_loss: 0.00000
+04/01/2025 09:37:05 PM - DFINE_Logger - INFO - Training completed | train loss 3.20298 | valid loss 2.80550

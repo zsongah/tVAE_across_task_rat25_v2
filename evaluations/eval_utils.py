@@ -14,7 +14,7 @@ def align_latent_mu(actions, latent_mu):
             press_lever_lengths.append(i - reaching_end + 1)
     
     # avg_reaching_length = int(np.mean(reaching_lengths))
-    avg_reaching_length = 20
+    avg_reaching_length = 15
     avg_press_lever_length = int(np.mean(press_lever_lengths))
     
     # 对齐latent_mu
@@ -43,8 +43,9 @@ def align_latent_mu(actions, latent_mu):
                 ) for dim in range(reaching_mu.shape[1])
             ]).T  # 转置回原始形状
         else:
-            # indices = np.linspace(0, len(reaching_mu) - 1, avg_press_lever_length, dtype=int)
-            reaching_mu = reaching_mu[-avg_reaching_length:,:] # 取后几个
+            indices = np.linspace(0, len(reaching_mu) - 1, avg_reaching_length, dtype=int)
+            reaching_mu = reaching_mu[indices,:]
+            # reaching_mu = reaching_mu[-avg_reaching_length:,:] # 取后几个
         
         # 对齐press-lever
         if len(press_lever_mu) < avg_press_lever_length:

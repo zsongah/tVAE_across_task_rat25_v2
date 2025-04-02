@@ -9,6 +9,7 @@ _C = CfgNode(new_allowed=True) # 创建一个名为_C的配置节点(config node
 _C.SEED = 1 # previous 42
 _C.RESULT_DIR = "results/"
 _C.FIG_DIR = "figs/"
+_C.RUN_DIR = "runs/"
 
 _C.DATA = CfgNode(new_allowed=True)
 _C.DATA.RAT = ""         # 示例: 实验动物或对象标识

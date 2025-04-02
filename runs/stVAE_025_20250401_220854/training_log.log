@@ -1,0 +1,249 @@
+04/01/2025 10:08:55 PM - stVAE_Logger - INFO - Epoch 1, TRAIN
+04/01/2025 10:08:55 PM - stVAE_Logger - INFO - loss: 15.36901
+04/01/2025 10:08:55 PM - stVAE_Logger - INFO - mse: 15.29449
+04/01/2025 10:08:55 PM - stVAE_Logger - INFO - kld: 0.74519
+04/01/2025 10:08:55 PM - stVAE_Logger - INFO - Epoch 2, TRAIN
+04/01/2025 10:08:55 PM - stVAE_Logger - INFO - loss: 5.82566
+04/01/2025 10:08:55 PM - stVAE_Logger - INFO - mse: 5.81108
+04/01/2025 10:08:55 PM - stVAE_Logger - INFO - kld: 0.14587
+04/01/2025 10:08:55 PM - stVAE_Logger - INFO - Epoch 3, TRAIN
+04/01/2025 10:08:55 PM - stVAE_Logger - INFO - loss: 2.89311
+04/01/2025 10:08:55 PM - stVAE_Logger - INFO - mse: 2.87698
+04/01/2025 10:08:55 PM - stVAE_Logger - INFO - kld: 0.16131
+04/01/2025 10:08:56 PM - stVAE_Logger - INFO - Epoch 4, TRAIN
+04/01/2025 10:08:56 PM - stVAE_Logger - INFO - loss: 1.75758
+04/01/2025 10:08:56 PM - stVAE_Logger - INFO - mse: 1.73209
+04/01/2025 10:08:56 PM - stVAE_Logger - INFO - kld: 0.25493
+04/01/2025 10:08:56 PM - stVAE_Logger - INFO - Epoch 4, VALID
+04/01/2025 10:08:56 PM - stVAE_Logger - INFO - loss: 1.64362
+04/01/2025 10:08:56 PM - stVAE_Logger - INFO - mse: 1.61282
+04/01/2025 10:08:56 PM - stVAE_Logger - INFO - kld: 0.30798
+04/01/2025 10:08:56 PM - stVAE_Logger - INFO - Epoch 5, TRAIN
+04/01/2025 10:08:56 PM - stVAE_Logger - INFO - loss: 1.20914
+04/01/2025 10:08:56 PM - stVAE_Logger - INFO - mse: 1.17775
+04/01/2025 10:08:56 PM - stVAE_Logger - INFO - kld: 0.31394
+04/01/2025 10:08:56 PM - stVAE_Logger - INFO - Epoch 6, TRAIN
+04/01/2025 10:08:56 PM - stVAE_Logger - INFO - loss: 0.95578
+04/01/2025 10:08:56 PM - stVAE_Logger - INFO - mse: 0.91801
+04/01/2025 10:08:56 PM - stVAE_Logger - INFO - kld: 0.37770
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - Epoch 7, TRAIN
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - loss: 0.87026
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - mse: 0.83262
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - kld: 0.37641
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - Epoch 8, TRAIN
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - loss: 0.80172
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - mse: 0.76563
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - kld: 0.36086
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - Epoch 8, VALID
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - loss: 0.79254
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - mse: 0.75471
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - kld: 0.37831
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - Epoch 9, TRAIN
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - loss: 0.75506
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - mse: 0.71753
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - kld: 0.37530
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - Epoch 10, TRAIN
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - loss: 0.71613
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - mse: 0.68101
+04/01/2025 10:08:57 PM - stVAE_Logger - INFO - kld: 0.35123
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - Epoch 11, TRAIN
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - loss: 0.69027
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - mse: 0.65597
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - kld: 0.34310
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - Epoch 12, TRAIN
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - loss: 0.64862
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - mse: 0.61378
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - kld: 0.34835
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - Epoch 12, VALID
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - loss: 0.65959
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - mse: 0.62959
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - kld: 0.29998
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - Epoch 13, TRAIN
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - loss: 0.63655
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - mse: 0.60161
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - kld: 0.34942
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - Epoch 14, TRAIN
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - loss: 0.61356
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - mse: 0.57745
+04/01/2025 10:08:58 PM - stVAE_Logger - INFO - kld: 0.36115
+04/01/2025 10:08:59 PM - stVAE_Logger - INFO - Epoch 15, TRAIN
+04/01/2025 10:08:59 PM - stVAE_Logger - INFO - loss: 0.56508
+04/01/2025 10:08:59 PM - stVAE_Logger - INFO - mse: 0.52837
+04/01/2025 10:08:59 PM - stVAE_Logger - INFO - kld: 0.36707
+04/01/2025 10:08:59 PM - stVAE_Logger - INFO - Epoch 16, TRAIN
+04/01/2025 10:08:59 PM - stVAE_Logger - INFO - loss: 0.56334
+04/01/2025 10:08:59 PM - stVAE_Logger - INFO - mse: 0.52499
+04/01/2025 10:08:59 PM - stVAE_Logger - INFO - kld: 0.38345
+04/01/2025 10:08:59 PM - stVAE_Logger - INFO - Epoch 16, VALID
+04/01/2025 10:08:59 PM - stVAE_Logger - INFO - loss: 0.56414
+04/01/2025 10:08:59 PM - stVAE_Logger - INFO - mse: 0.53028
+04/01/2025 10:08:59 PM - stVAE_Logger - INFO - kld: 0.33854
+04/01/2025 10:08:59 PM - stVAE_Logger - INFO - Epoch 17, TRAIN
+04/01/2025 10:08:59 PM - stVAE_Logger - INFO - loss: 0.54088
+04/01/2025 10:08:59 PM - stVAE_Logger - INFO - mse: 0.50202
+04/01/2025 10:08:59 PM - stVAE_Logger - INFO - kld: 0.38860
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - Epoch 18, TRAIN
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - loss: 0.52939
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - mse: 0.48977
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - kld: 0.39624
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - Epoch 19, TRAIN
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - loss: 0.51366
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - mse: 0.47554
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - kld: 0.38119
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - Epoch 20, TRAIN
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - loss: 0.49476
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - mse: 0.45649
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - kld: 0.38263
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - Epoch 20, VALID
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - loss: 0.51348
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - mse: 0.47593
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - kld: 0.37547
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - Epoch 21, TRAIN
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - loss: 0.50223
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - mse: 0.46223
+04/01/2025 10:09:00 PM - stVAE_Logger - INFO - kld: 0.40004
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - Epoch 22, TRAIN
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - loss: 0.47544
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - mse: 0.43649
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - kld: 0.38949
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - Epoch 23, TRAIN
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - loss: 0.46276
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - mse: 0.42455
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - kld: 0.38210
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - Epoch 24, TRAIN
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - loss: 0.45437
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - mse: 0.41631
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - kld: 0.38058
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - Epoch 24, VALID
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - loss: 0.49085
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - mse: 0.45044
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - kld: 0.40412
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - Epoch 25, TRAIN
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - loss: 0.46644
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - mse: 0.42704
+04/01/2025 10:09:01 PM - stVAE_Logger - INFO - kld: 0.39400
+04/01/2025 10:09:02 PM - stVAE_Logger - INFO - Epoch 26, TRAIN
+04/01/2025 10:09:02 PM - stVAE_Logger - INFO - loss: 0.44732
+04/01/2025 10:09:02 PM - stVAE_Logger - INFO - mse: 0.40736
+04/01/2025 10:09:02 PM - stVAE_Logger - INFO - kld: 0.39953
+04/01/2025 10:09:02 PM - stVAE_Logger - INFO - Epoch 27, TRAIN
+04/01/2025 10:09:02 PM - stVAE_Logger - INFO - loss: 0.45074
+04/01/2025 10:09:02 PM - stVAE_Logger - INFO - mse: 0.41097
+04/01/2025 10:09:02 PM - stVAE_Logger - INFO - kld: 0.39771
+04/01/2025 10:09:02 PM - stVAE_Logger - INFO - Epoch 28, TRAIN
+04/01/2025 10:09:02 PM - stVAE_Logger - INFO - loss: 0.45474
+04/01/2025 10:09:02 PM - stVAE_Logger - INFO - mse: 0.41560
+04/01/2025 10:09:02 PM - stVAE_Logger - INFO - kld: 0.39138
+04/01/2025 10:09:02 PM - stVAE_Logger - INFO - Epoch 28, VALID
+04/01/2025 10:09:02 PM - stVAE_Logger - INFO - loss: 0.46597
+04/01/2025 10:09:02 PM - stVAE_Logger - INFO - mse: 0.42909
+04/01/2025 10:09:02 PM - stVAE_Logger - INFO - kld: 0.36879
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - Epoch 29, TRAIN
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - loss: 0.43803
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - mse: 0.39839
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - kld: 0.39644
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - Epoch 30, TRAIN
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - loss: 0.43429
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - mse: 0.39481
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - kld: 0.39476
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - Epoch 31, TRAIN
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - loss: 0.43196
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - mse: 0.39134
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - kld: 0.40617
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - Epoch 32, TRAIN
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - loss: 0.42120
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - mse: 0.38231
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - kld: 0.38882
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - Epoch 32, VALID
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - loss: 0.47262
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - mse: 0.39361
+04/01/2025 10:09:03 PM - stVAE_Logger - INFO - kld: 0.39502
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - Epoch 33, TRAIN
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - loss: 0.45568
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - mse: 0.40641
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - kld: 0.24634
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - Epoch 34, TRAIN
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - loss: 0.47480
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - mse: 0.42164
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - kld: 0.17721
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - Epoch 35, TRAIN
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - loss: 0.49837
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - mse: 0.44054
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - kld: 0.14457
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - Epoch 36, TRAIN
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - loss: 0.51942
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - mse: 0.45798
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - kld: 0.12286
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - Epoch 36, VALID
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - loss: 0.47355
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - mse: 0.39865
+04/01/2025 10:09:04 PM - stVAE_Logger - INFO - kld: 0.12483
+04/01/2025 10:09:05 PM - stVAE_Logger - INFO - Epoch 37, TRAIN
+04/01/2025 10:09:05 PM - stVAE_Logger - INFO - loss: 0.52709
+04/01/2025 10:09:05 PM - stVAE_Logger - INFO - mse: 0.46594
+04/01/2025 10:09:05 PM - stVAE_Logger - INFO - kld: 0.10192
+04/01/2025 10:09:05 PM - stVAE_Logger - INFO - Epoch 38, TRAIN
+04/01/2025 10:09:05 PM - stVAE_Logger - INFO - loss: 0.53552
+04/01/2025 10:09:05 PM - stVAE_Logger - INFO - mse: 0.47257
+04/01/2025 10:09:05 PM - stVAE_Logger - INFO - kld: 0.08992
+04/01/2025 10:09:05 PM - stVAE_Logger - INFO - Epoch 39, TRAIN
+04/01/2025 10:09:05 PM - stVAE_Logger - INFO - loss: 0.55304
+04/01/2025 10:09:05 PM - stVAE_Logger - INFO - mse: 0.48969
+04/01/2025 10:09:05 PM - stVAE_Logger - INFO - kld: 0.07919
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - Epoch 40, TRAIN
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - loss: 0.56612
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - mse: 0.50166
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - kld: 0.07162
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - Epoch 40, VALID
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - loss: 0.49318
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - mse: 0.41749
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - kld: 0.07569
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - Epoch 41, TRAIN
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - loss: 0.57406
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - mse: 0.50889
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - kld: 0.06517
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - Epoch 42, TRAIN
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - loss: 0.57730
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - mse: 0.51172
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - kld: 0.05962
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - Epoch 43, TRAIN
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - loss: 0.58909
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - mse: 0.52241
+04/01/2025 10:09:06 PM - stVAE_Logger - INFO - kld: 0.05557
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - Epoch 44, TRAIN
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - loss: 0.59105
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - mse: 0.52307
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - kld: 0.05229
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - Epoch 44, VALID
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - loss: 0.50545
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - mse: 0.42951
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - kld: 0.05424
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - Epoch 45, TRAIN
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - loss: 0.60229
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - mse: 0.53455
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - kld: 0.04838
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - Epoch 46, TRAIN
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - loss: 0.60825
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - mse: 0.53910
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - kld: 0.04610
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - Epoch 47, TRAIN
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - loss: 0.61506
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - mse: 0.54578
+04/01/2025 10:09:07 PM - stVAE_Logger - INFO - kld: 0.04330
+04/01/2025 10:09:08 PM - stVAE_Logger - INFO - Epoch 48, TRAIN
+04/01/2025 10:09:08 PM - stVAE_Logger - INFO - loss: 0.61894
+04/01/2025 10:09:08 PM - stVAE_Logger - INFO - mse: 0.54832
+04/01/2025 10:09:08 PM - stVAE_Logger - INFO - kld: 0.04155
+04/01/2025 10:09:08 PM - stVAE_Logger - INFO - Epoch 48, VALID
+04/01/2025 10:09:08 PM - stVAE_Logger - INFO - loss: 0.51565
+04/01/2025 10:09:08 PM - stVAE_Logger - INFO - mse: 0.43634
+04/01/2025 10:09:08 PM - stVAE_Logger - INFO - kld: 0.04406
+04/01/2025 10:09:08 PM - stVAE_Logger - INFO - Epoch 49, TRAIN
+04/01/2025 10:09:08 PM - stVAE_Logger - INFO - loss: 0.63106
+04/01/2025 10:09:08 PM - stVAE_Logger - INFO - mse: 0.55818
+04/01/2025 10:09:08 PM - stVAE_Logger - INFO - kld: 0.04049
+04/01/2025 10:09:08 PM - stVAE_Logger - INFO - Epoch 50, TRAIN
+04/01/2025 10:09:08 PM - stVAE_Logger - INFO - loss: 0.64264
+04/01/2025 10:09:08 PM - stVAE_Logger - INFO - mse: 0.56865
+04/01/2025 10:09:08 PM - stVAE_Logger - INFO - kld: 0.03894
+04/01/2025 10:09:12 PM - stVAE_Logger - INFO - Training completed | train loss 0.64264 | valid loss 0.51565

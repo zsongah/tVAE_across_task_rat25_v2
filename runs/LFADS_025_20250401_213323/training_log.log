@@ -1,0 +1,301 @@
+04/01/2025 09:33:27 PM - LFADS_Logger - INFO - Epoch 1, TRAIN
+04/01/2025 09:33:27 PM - LFADS_Logger - INFO - total_loss: 14.67023
+04/01/2025 09:33:27 PM - LFADS_Logger - INFO - recon_loss: 14.67023
+04/01/2025 09:33:27 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:33:27 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:33:30 PM - LFADS_Logger - INFO - Epoch 2, TRAIN
+04/01/2025 09:33:30 PM - LFADS_Logger - INFO - total_loss: 10.82615
+04/01/2025 09:33:30 PM - LFADS_Logger - INFO - recon_loss: 10.82615
+04/01/2025 09:33:30 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:33:30 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:33:33 PM - LFADS_Logger - INFO - Epoch 3, TRAIN
+04/01/2025 09:33:33 PM - LFADS_Logger - INFO - total_loss: 4.63390
+04/01/2025 09:33:33 PM - LFADS_Logger - INFO - recon_loss: 4.63390
+04/01/2025 09:33:33 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:33:33 PM - LFADS_Logger - INFO - kl_loss: 0.00001
+04/01/2025 09:33:36 PM - LFADS_Logger - INFO - Epoch 4, TRAIN
+04/01/2025 09:33:36 PM - LFADS_Logger - INFO - total_loss: 3.54628
+04/01/2025 09:33:36 PM - LFADS_Logger - INFO - recon_loss: 3.54628
+04/01/2025 09:33:36 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:33:36 PM - LFADS_Logger - INFO - kl_loss: 0.00001
+04/01/2025 09:33:39 PM - LFADS_Logger - INFO - Epoch 5, TRAIN
+04/01/2025 09:33:39 PM - LFADS_Logger - INFO - total_loss: 2.96111
+04/01/2025 09:33:39 PM - LFADS_Logger - INFO - recon_loss: 2.96111
+04/01/2025 09:33:39 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:33:39 PM - LFADS_Logger - INFO - kl_loss: 0.00001
+04/01/2025 09:33:39 PM - LFADS_Logger - INFO - Epoch 5, VALID
+04/01/2025 09:33:39 PM - LFADS_Logger - INFO - total_loss: 2.39037
+04/01/2025 09:33:39 PM - LFADS_Logger - INFO - recon_loss: 2.39037
+04/01/2025 09:33:39 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:33:39 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:33:42 PM - LFADS_Logger - INFO - Epoch 6, TRAIN
+04/01/2025 09:33:42 PM - LFADS_Logger - INFO - total_loss: 2.69372
+04/01/2025 09:33:42 PM - LFADS_Logger - INFO - recon_loss: 2.69372
+04/01/2025 09:33:42 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:33:42 PM - LFADS_Logger - INFO - kl_loss: 0.00001
+04/01/2025 09:33:44 PM - LFADS_Logger - INFO - Epoch 7, TRAIN
+04/01/2025 09:33:44 PM - LFADS_Logger - INFO - total_loss: 2.47919
+04/01/2025 09:33:44 PM - LFADS_Logger - INFO - recon_loss: 2.47919
+04/01/2025 09:33:44 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:33:44 PM - LFADS_Logger - INFO - kl_loss: 0.00001
+04/01/2025 09:33:47 PM - LFADS_Logger - INFO - Epoch 8, TRAIN
+04/01/2025 09:33:47 PM - LFADS_Logger - INFO - total_loss: 2.37368
+04/01/2025 09:33:47 PM - LFADS_Logger - INFO - recon_loss: 2.37367
+04/01/2025 09:33:47 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:33:47 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:33:50 PM - LFADS_Logger - INFO - Epoch 9, TRAIN
+04/01/2025 09:33:50 PM - LFADS_Logger - INFO - total_loss: 2.24649
+04/01/2025 09:33:50 PM - LFADS_Logger - INFO - recon_loss: 2.24649
+04/01/2025 09:33:50 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:33:50 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:33:53 PM - LFADS_Logger - INFO - Epoch 10, TRAIN
+04/01/2025 09:33:53 PM - LFADS_Logger - INFO - total_loss: 2.18156
+04/01/2025 09:33:53 PM - LFADS_Logger - INFO - recon_loss: 2.18156
+04/01/2025 09:33:53 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:33:53 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:33:53 PM - LFADS_Logger - INFO - Epoch 10, VALID
+04/01/2025 09:33:53 PM - LFADS_Logger - INFO - total_loss: 1.69810
+04/01/2025 09:33:53 PM - LFADS_Logger - INFO - recon_loss: 1.69810
+04/01/2025 09:33:53 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:33:53 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:33:56 PM - LFADS_Logger - INFO - Epoch 11, TRAIN
+04/01/2025 09:33:56 PM - LFADS_Logger - INFO - total_loss: 2.11780
+04/01/2025 09:33:56 PM - LFADS_Logger - INFO - recon_loss: 2.11780
+04/01/2025 09:33:56 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:33:56 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:33:59 PM - LFADS_Logger - INFO - Epoch 12, TRAIN
+04/01/2025 09:33:59 PM - LFADS_Logger - INFO - total_loss: 2.12588
+04/01/2025 09:33:59 PM - LFADS_Logger - INFO - recon_loss: 2.12588
+04/01/2025 09:33:59 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:33:59 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:01 PM - LFADS_Logger - INFO - Epoch 13, TRAIN
+04/01/2025 09:34:01 PM - LFADS_Logger - INFO - total_loss: 2.10589
+04/01/2025 09:34:01 PM - LFADS_Logger - INFO - recon_loss: 2.10589
+04/01/2025 09:34:01 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:01 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:04 PM - LFADS_Logger - INFO - Epoch 14, TRAIN
+04/01/2025 09:34:04 PM - LFADS_Logger - INFO - total_loss: 2.03939
+04/01/2025 09:34:04 PM - LFADS_Logger - INFO - recon_loss: 2.03939
+04/01/2025 09:34:04 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:04 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:07 PM - LFADS_Logger - INFO - Epoch 15, TRAIN
+04/01/2025 09:34:07 PM - LFADS_Logger - INFO - total_loss: 2.04027
+04/01/2025 09:34:07 PM - LFADS_Logger - INFO - recon_loss: 2.04027
+04/01/2025 09:34:07 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:07 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:07 PM - LFADS_Logger - INFO - Epoch 15, VALID
+04/01/2025 09:34:07 PM - LFADS_Logger - INFO - total_loss: 1.61457
+04/01/2025 09:34:07 PM - LFADS_Logger - INFO - recon_loss: 1.61457
+04/01/2025 09:34:07 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:07 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:10 PM - LFADS_Logger - INFO - Epoch 16, TRAIN
+04/01/2025 09:34:10 PM - LFADS_Logger - INFO - total_loss: 2.06986
+04/01/2025 09:34:10 PM - LFADS_Logger - INFO - recon_loss: 2.06986
+04/01/2025 09:34:10 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:10 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:13 PM - LFADS_Logger - INFO - Epoch 17, TRAIN
+04/01/2025 09:34:13 PM - LFADS_Logger - INFO - total_loss: 1.98628
+04/01/2025 09:34:13 PM - LFADS_Logger - INFO - recon_loss: 1.98628
+04/01/2025 09:34:13 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:13 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:16 PM - LFADS_Logger - INFO - Epoch 18, TRAIN
+04/01/2025 09:34:16 PM - LFADS_Logger - INFO - total_loss: 1.92608
+04/01/2025 09:34:16 PM - LFADS_Logger - INFO - recon_loss: 1.92608
+04/01/2025 09:34:16 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:16 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:19 PM - LFADS_Logger - INFO - Epoch 19, TRAIN
+04/01/2025 09:34:19 PM - LFADS_Logger - INFO - total_loss: 1.98082
+04/01/2025 09:34:19 PM - LFADS_Logger - INFO - recon_loss: 1.98082
+04/01/2025 09:34:19 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:19 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:21 PM - LFADS_Logger - INFO - Epoch 20, TRAIN
+04/01/2025 09:34:21 PM - LFADS_Logger - INFO - total_loss: 1.90183
+04/01/2025 09:34:21 PM - LFADS_Logger - INFO - recon_loss: 1.90183
+04/01/2025 09:34:21 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:21 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:22 PM - LFADS_Logger - INFO - Epoch 20, VALID
+04/01/2025 09:34:22 PM - LFADS_Logger - INFO - total_loss: 1.40723
+04/01/2025 09:34:22 PM - LFADS_Logger - INFO - recon_loss: 1.40722
+04/01/2025 09:34:22 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:22 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:24 PM - LFADS_Logger - INFO - Epoch 21, TRAIN
+04/01/2025 09:34:24 PM - LFADS_Logger - INFO - total_loss: 1.89881
+04/01/2025 09:34:24 PM - LFADS_Logger - INFO - recon_loss: 1.89881
+04/01/2025 09:34:24 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:24 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:27 PM - LFADS_Logger - INFO - Epoch 22, TRAIN
+04/01/2025 09:34:27 PM - LFADS_Logger - INFO - total_loss: 1.90614
+04/01/2025 09:34:27 PM - LFADS_Logger - INFO - recon_loss: 1.90614
+04/01/2025 09:34:27 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:27 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:30 PM - LFADS_Logger - INFO - Epoch 23, TRAIN
+04/01/2025 09:34:30 PM - LFADS_Logger - INFO - total_loss: 1.85143
+04/01/2025 09:34:30 PM - LFADS_Logger - INFO - recon_loss: 1.85143
+04/01/2025 09:34:30 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:30 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:33 PM - LFADS_Logger - INFO - Epoch 24, TRAIN
+04/01/2025 09:34:33 PM - LFADS_Logger - INFO - total_loss: 1.85511
+04/01/2025 09:34:33 PM - LFADS_Logger - INFO - recon_loss: 1.85511
+04/01/2025 09:34:33 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:33 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:36 PM - LFADS_Logger - INFO - Epoch 25, TRAIN
+04/01/2025 09:34:36 PM - LFADS_Logger - INFO - total_loss: 1.81677
+04/01/2025 09:34:36 PM - LFADS_Logger - INFO - recon_loss: 1.81676
+04/01/2025 09:34:36 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:36 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:36 PM - LFADS_Logger - INFO - Epoch 25, VALID
+04/01/2025 09:34:36 PM - LFADS_Logger - INFO - total_loss: 1.43531
+04/01/2025 09:34:36 PM - LFADS_Logger - INFO - recon_loss: 1.43531
+04/01/2025 09:34:36 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:36 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:39 PM - LFADS_Logger - INFO - Epoch 26, TRAIN
+04/01/2025 09:34:39 PM - LFADS_Logger - INFO - total_loss: 1.78817
+04/01/2025 09:34:39 PM - LFADS_Logger - INFO - recon_loss: 1.78817
+04/01/2025 09:34:39 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:39 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:42 PM - LFADS_Logger - INFO - Epoch 27, TRAIN
+04/01/2025 09:34:42 PM - LFADS_Logger - INFO - total_loss: 1.79305
+04/01/2025 09:34:42 PM - LFADS_Logger - INFO - recon_loss: 1.79305
+04/01/2025 09:34:42 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:42 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:45 PM - LFADS_Logger - INFO - Epoch 28, TRAIN
+04/01/2025 09:34:45 PM - LFADS_Logger - INFO - total_loss: 1.79024
+04/01/2025 09:34:45 PM - LFADS_Logger - INFO - recon_loss: 1.79024
+04/01/2025 09:34:45 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:45 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:47 PM - LFADS_Logger - INFO - Epoch 29, TRAIN
+04/01/2025 09:34:47 PM - LFADS_Logger - INFO - total_loss: 1.77934
+04/01/2025 09:34:47 PM - LFADS_Logger - INFO - recon_loss: 1.77934
+04/01/2025 09:34:47 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:47 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:50 PM - LFADS_Logger - INFO - Epoch 30, TRAIN
+04/01/2025 09:34:50 PM - LFADS_Logger - INFO - total_loss: 1.76705
+04/01/2025 09:34:50 PM - LFADS_Logger - INFO - recon_loss: 1.76705
+04/01/2025 09:34:50 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:50 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:50 PM - LFADS_Logger - INFO - Epoch 30, VALID
+04/01/2025 09:34:50 PM - LFADS_Logger - INFO - total_loss: 1.43975
+04/01/2025 09:34:50 PM - LFADS_Logger - INFO - recon_loss: 1.43975
+04/01/2025 09:34:50 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:50 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:53 PM - LFADS_Logger - INFO - Epoch 31, TRAIN
+04/01/2025 09:34:53 PM - LFADS_Logger - INFO - total_loss: 1.76937
+04/01/2025 09:34:53 PM - LFADS_Logger - INFO - recon_loss: 1.76937
+04/01/2025 09:34:53 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:53 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:56 PM - LFADS_Logger - INFO - Epoch 32, TRAIN
+04/01/2025 09:34:56 PM - LFADS_Logger - INFO - total_loss: 1.73489
+04/01/2025 09:34:56 PM - LFADS_Logger - INFO - recon_loss: 1.73489
+04/01/2025 09:34:56 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:56 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:34:59 PM - LFADS_Logger - INFO - Epoch 33, TRAIN
+04/01/2025 09:34:59 PM - LFADS_Logger - INFO - total_loss: 1.73151
+04/01/2025 09:34:59 PM - LFADS_Logger - INFO - recon_loss: 1.73151
+04/01/2025 09:34:59 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:34:59 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:02 PM - LFADS_Logger - INFO - Epoch 34, TRAIN
+04/01/2025 09:35:02 PM - LFADS_Logger - INFO - total_loss: 1.73808
+04/01/2025 09:35:02 PM - LFADS_Logger - INFO - recon_loss: 1.73808
+04/01/2025 09:35:02 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:02 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:04 PM - LFADS_Logger - INFO - Epoch 35, TRAIN
+04/01/2025 09:35:04 PM - LFADS_Logger - INFO - total_loss: 1.69554
+04/01/2025 09:35:04 PM - LFADS_Logger - INFO - recon_loss: 1.69554
+04/01/2025 09:35:04 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:04 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:04 PM - LFADS_Logger - INFO - Epoch 35, VALID
+04/01/2025 09:35:04 PM - LFADS_Logger - INFO - total_loss: 1.37698
+04/01/2025 09:35:04 PM - LFADS_Logger - INFO - recon_loss: 1.37698
+04/01/2025 09:35:04 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:04 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:07 PM - LFADS_Logger - INFO - Epoch 36, TRAIN
+04/01/2025 09:35:07 PM - LFADS_Logger - INFO - total_loss: 1.70708
+04/01/2025 09:35:07 PM - LFADS_Logger - INFO - recon_loss: 1.70708
+04/01/2025 09:35:07 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:07 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:10 PM - LFADS_Logger - INFO - Epoch 37, TRAIN
+04/01/2025 09:35:10 PM - LFADS_Logger - INFO - total_loss: 1.70833
+04/01/2025 09:35:10 PM - LFADS_Logger - INFO - recon_loss: 1.70833
+04/01/2025 09:35:10 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:10 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:13 PM - LFADS_Logger - INFO - Epoch 38, TRAIN
+04/01/2025 09:35:13 PM - LFADS_Logger - INFO - total_loss: 1.64924
+04/01/2025 09:35:13 PM - LFADS_Logger - INFO - recon_loss: 1.64924
+04/01/2025 09:35:13 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:13 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:16 PM - LFADS_Logger - INFO - Epoch 39, TRAIN
+04/01/2025 09:35:16 PM - LFADS_Logger - INFO - total_loss: 1.68129
+04/01/2025 09:35:16 PM - LFADS_Logger - INFO - recon_loss: 1.68129
+04/01/2025 09:35:16 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:16 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:18 PM - LFADS_Logger - INFO - Epoch 40, TRAIN
+04/01/2025 09:35:18 PM - LFADS_Logger - INFO - total_loss: 1.67557
+04/01/2025 09:35:18 PM - LFADS_Logger - INFO - recon_loss: 1.67557
+04/01/2025 09:35:18 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:18 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:18 PM - LFADS_Logger - INFO - Epoch 40, VALID
+04/01/2025 09:35:18 PM - LFADS_Logger - INFO - total_loss: 1.39874
+04/01/2025 09:35:18 PM - LFADS_Logger - INFO - recon_loss: 1.39874
+04/01/2025 09:35:18 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:18 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:21 PM - LFADS_Logger - INFO - Epoch 41, TRAIN
+04/01/2025 09:35:21 PM - LFADS_Logger - INFO - total_loss: 1.66416
+04/01/2025 09:35:21 PM - LFADS_Logger - INFO - recon_loss: 1.66415
+04/01/2025 09:35:21 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:21 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:24 PM - LFADS_Logger - INFO - Epoch 42, TRAIN
+04/01/2025 09:35:24 PM - LFADS_Logger - INFO - total_loss: 1.63304
+04/01/2025 09:35:24 PM - LFADS_Logger - INFO - recon_loss: 1.63304
+04/01/2025 09:35:24 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:24 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:27 PM - LFADS_Logger - INFO - Epoch 43, TRAIN
+04/01/2025 09:35:27 PM - LFADS_Logger - INFO - total_loss: 1.68417
+04/01/2025 09:35:27 PM - LFADS_Logger - INFO - recon_loss: 1.68417
+04/01/2025 09:35:27 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:27 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:30 PM - LFADS_Logger - INFO - Epoch 44, TRAIN
+04/01/2025 09:35:30 PM - LFADS_Logger - INFO - total_loss: 1.65216
+04/01/2025 09:35:30 PM - LFADS_Logger - INFO - recon_loss: 1.65216
+04/01/2025 09:35:30 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:30 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:32 PM - LFADS_Logger - INFO - Epoch 45, TRAIN
+04/01/2025 09:35:32 PM - LFADS_Logger - INFO - total_loss: 1.63636
+04/01/2025 09:35:32 PM - LFADS_Logger - INFO - recon_loss: 1.63636
+04/01/2025 09:35:32 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:32 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:33 PM - LFADS_Logger - INFO - Epoch 45, VALID
+04/01/2025 09:35:33 PM - LFADS_Logger - INFO - total_loss: 1.38807
+04/01/2025 09:35:33 PM - LFADS_Logger - INFO - recon_loss: 1.38807
+04/01/2025 09:35:33 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:33 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:35 PM - LFADS_Logger - INFO - Epoch 46, TRAIN
+04/01/2025 09:35:35 PM - LFADS_Logger - INFO - total_loss: 1.64234
+04/01/2025 09:35:35 PM - LFADS_Logger - INFO - recon_loss: 1.64234
+04/01/2025 09:35:35 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:35 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:38 PM - LFADS_Logger - INFO - Epoch 47, TRAIN
+04/01/2025 09:35:38 PM - LFADS_Logger - INFO - total_loss: 1.66954
+04/01/2025 09:35:38 PM - LFADS_Logger - INFO - recon_loss: 1.66954
+04/01/2025 09:35:38 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:38 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:41 PM - LFADS_Logger - INFO - Epoch 48, TRAIN
+04/01/2025 09:35:41 PM - LFADS_Logger - INFO - total_loss: 1.63594
+04/01/2025 09:35:41 PM - LFADS_Logger - INFO - recon_loss: 1.63593
+04/01/2025 09:35:41 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:41 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:44 PM - LFADS_Logger - INFO - Epoch 49, TRAIN
+04/01/2025 09:35:44 PM - LFADS_Logger - INFO - total_loss: 1.62749
+04/01/2025 09:35:44 PM - LFADS_Logger - INFO - recon_loss: 1.62748
+04/01/2025 09:35:44 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:44 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:47 PM - LFADS_Logger - INFO - Epoch 50, TRAIN
+04/01/2025 09:35:47 PM - LFADS_Logger - INFO - total_loss: 1.64086
+04/01/2025 09:35:47 PM - LFADS_Logger - INFO - recon_loss: 1.64086
+04/01/2025 09:35:47 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:47 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:47 PM - LFADS_Logger - INFO - Epoch 50, VALID
+04/01/2025 09:35:47 PM - LFADS_Logger - INFO - total_loss: 1.39305
+04/01/2025 09:35:47 PM - LFADS_Logger - INFO - recon_loss: 1.39305
+04/01/2025 09:35:47 PM - LFADS_Logger - INFO - l2_loss: 0.00000
+04/01/2025 09:35:47 PM - LFADS_Logger - INFO - kl_loss: 0.00000
+04/01/2025 09:35:51 PM - LFADS_Logger - INFO - Training completed | train loss 1.64086 | valid loss 1.39305

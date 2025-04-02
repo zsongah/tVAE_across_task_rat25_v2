@@ -1,0 +1,14 @@
+
+
+MODEL:
+  NAME: "LDF"
+  # Dimensionality of neural observations
+  DIM_Y: 16
+  # Dimensionality of the latent state
+  LATENT_DIM: 6
+  TIME_WINDOW: 25          # 时间窗口长度
+TRAIN:
+  n_init: 3
+  n_iter: 5
+  STEP_SIZE: 1
+  STEP_SIZE_TEST: 10
