@@ -22,8 +22,8 @@ class KRL:
         self.predict_label_2MC = None
         # KRL hyper parameters
         self.kernel_width = 2
-        self.learning_rate = 0.2
-        self.val_interval = 10
+        self.learning_rate = 0.2 # rat 25:0.2
+        self.val_interval = 15 # rat 25:10
         # KRL parameters
         self.cluster_1MC = None
         self.weight_to_output_1MC = None

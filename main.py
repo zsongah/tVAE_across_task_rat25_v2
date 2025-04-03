@@ -52,12 +52,12 @@ def main():
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f'Using device: {device}')
-    rat = '025'
+    rat = '055' # 55
     latent_dims = [6] 
     task_1mc = '1MC'
-    day_1mc = '2020-07-16' # 数字之间加下划线不识别
+    day_1mc = '2024-02-27' # 数字之间加下划线不识别
 
-    # stVAE/LFADS/DFINE/LDF
+    # stVAE/LFADS/DFINE/LDF'
     
     proj_name_1mcs = ['LDF'] # 加载不同模型
     for proj_name_1mc in proj_name_1mcs:

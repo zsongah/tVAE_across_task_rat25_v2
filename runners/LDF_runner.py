@@ -24,8 +24,8 @@ class LDF_runner:
         para_init = { 
             'A': np.eye(self.latent_dim) + 0.01 * np.random.randn(self.latent_dim, self.latent_dim),
             'C': np.random.randn(self.y_dim, self.latent_dim),
-            'Q': np.eye(self.latent_dim) * 0.1,
-            'R': np.eye(self.y_dim) * 0.1
+            'Q': np.eye(self.latent_dim),
+            'R': np.eye(self.y_dim)
         }
         self.model.fit(y_train, para_init, n_iter=self.n_init, n_init=self.n_iter)
 
